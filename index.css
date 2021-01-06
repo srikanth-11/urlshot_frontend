@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(
+    rgba(245, 245, 248, 0.6),
+    rgba(217, 208, 243, 0.6)
+  );
+}
+.shortner {
+  width: 100%;
+}
+
+.conatiner-search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+.input-group {
+  width: 50%;
+}
+
+.conatiner-search-bar input {
+  width: 45%;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px 0px 0px 5px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.conatiner-search-bar input:focus {
+  background: rgba(255, 255, 255, 1);
+}
+
+.conatiner-search-bar input {
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: 0px;
+}
+
+table {
+  width: 100%;
+  display: block;
+}
+
+.url-data:hover a,
+.short-url:hover {
+  cursor: pointer;
+  color: royalblue;
+}
+
+.msg-modal-container {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.msg-modal-content {
+  width: auto;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 120px 20px 60px;
+  max-width: 40%;
+  font-size: 18px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    rgba(245, 245, 248, 0.6),
+    rgba(217, 208, 243, 0.6)
+  );
+}
+
+.modal-close-btn {
+  font-size: 14px;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#name {
+  font-family: "sofia";
+  color: rgb(105, 95, 95);
+}
+h1 {
+  font-family: "Big Shoulders Stencil Text";
+  color: rgb(105, 95, 95);
+}

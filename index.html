@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SRI|URLSHORTNER</title>
+    <meta name="description" content="" />
+    <link rel="icon" href="1.png" type="image/gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Big Shoulders Stencil Text"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="shortner">
+        <div class="text-left">
+          <h1 id="name">urlshortner</h1>
+        </div>
+        <div class="text-center">
+          <h1>SHORTEN YOUR URL</h1>
+        </div>
+
+        <div class="conatiner-search-bar">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="shrink-text"
+              placeholder="place the url to shorten"
+              aria-label="url"
+              aria-describedby="button-addon4"
+            />
+            <div class="input-group-append" id="button-addon4">
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                id="shortenUrl"
+              >
+                shrink
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="col">
+        <table class="table text-center">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">SLNO</th>
+              <th scope="col">URL</th>
+              <th scope="col">SHORTURL</th>
+              <th scope="col">CLICKS</th>
+            </tr>
+          </thead>
+          <tbody id="content"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
