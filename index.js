@@ -66,7 +66,7 @@ let createDomForUrlDetails = (urlDetailsJson) => {
 
 let shortenUrl = async () => {
   try {
-    //showLoader();
+   
     let url = document.getElementById("shrink-text").value;
     let shortenUrl = await fetch(`${myurl}/shorten-url`, {
       // Adding method type
@@ -86,7 +86,7 @@ let shortenUrl = async () => {
     document.getElementById("shrink-text").value = "";
     displayMsgModal(shortenUrlDetails.message);
     displayUrlDetails();
-    //hideLoader();
+   
   } catch (err) {
     console.log(err);
   }
