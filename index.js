@@ -11,9 +11,20 @@ let fetchAllUrlDetails = async () => {
   }
 };
 
-let displayUrlDetails = async () => {
-  let urlDetailsJson = await fetchAllUrlDetails();
+// show the loader
+let showLoader = () => {
+  document.getElementById('loader').style.display = 'block';
+}
 
+//hide the loader
+let hideLoader = () => {
+  document.getElementById('loader').style.display = 'none';
+}
+
+let displayUrlDetails = async () => {
+   showLoader();
+  let urlDetailsJson = await fetchAllUrlDetails();
+   hideLoader();
   createDomForUrlDetails(urlDetailsJson);
 };
 displayUrlDetails();
