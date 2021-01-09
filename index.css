@@ -110,6 +110,8 @@ h1 {
   width: 8rem;
   height: 8rem;
   animation: spin 2s linear infinite;
+  position: relative;
+  left:500px;
 }
 
 @keyframes spin {
